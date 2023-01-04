@@ -1,0 +1,28 @@
+@import "./Home/home.scss";
+@import "./Historia/historia";
+@import "./Cards/cards";
+@import "./Instinto/instinto.scss";
+@import "./enemies/enemies.scss";
+@import "./títulos/titulo.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  font-family: "Caudex", serif;
+}
+body::-webkit-scrollbar {
+  width: 15px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: white; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $fundo-cores; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid white; /* creates padding around scroll thumb */
+}

@@ -1,0 +1,76 @@
+@import "../functions";
+@import "../variables";
+
+.circle {
+  position: absolute;
+  height: 65vh;
+  width: 30vw;
+
+  background-color: $fundo-cores;
+  border: 3px solid orange;
+  border-radius: 50%;
+  z-index: -1;
+}
+.historia {
+  margin-top: 10vh;
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 100px;
+
+  .textBox {
+    height: 100%;
+    text-align: left;
+    flex-direction: column;
+    @include display(center);
+    padding: 40px;
+    h2 {
+      margin: 30px;
+      font-size: 5.5rem;
+      color: $fundo-cores;
+      font-weight: 800;
+    }
+    p {
+      font-size: 2rem;
+      color: black;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .circle {
+    position: absolute;
+    height: 60vh;
+    width: 80vw;
+
+    background-color: $fundo-cores;
+    border: 3px solid orange;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  .historia {
+    grid-template-columns: 1fr;
+    place-items: center;
+    padding: 10px;
+    margin-top: 15vh;
+    img {
+      margin: 0px auto;
+      margin-left: 0px;
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  .textBox {
+    padding: 0px;
+    margin: 0px auto;
+
+    h2 {
+      font-size: 1rem;
+    }
+    p {
+      font-size: 3px;
+      color: red;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import "../variables";
+
+.title {
+  @include display(start);
+  align-items: center;
+  margin-left: 5vw;
+  h2 {
+    font-size: 2.7rem;
+    color: $fundo-cores;
+
+    font-weight: 900;
+  }
+}

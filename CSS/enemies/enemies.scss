@@ -1,0 +1,53 @@
+@import "../variables";
+@import "../functions";
+
+.enemies {
+  width: 100%;
+
+  .container__enemies {
+    position: relative;
+    // background-color: ;
+    display: flex;
+
+    margin: 0px auto;
+    width: 100vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .color__3 {
+    color: red;
+  }
+  .color__2 {
+    color: rgb(219, 164, 207);
+  }
+  .color__1 {
+    color: purple;
+  }
+  .goku__enemies {
+    height: 400px;
+    width: 300px;
+    position: relative;
+    margin-top: 10vh;
+    h3 {
+      font-size: 2rem;
+      text-align: center;
+      color: $fundo-cores;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.goku__enemies:hover {
+  cursor: pointer;
+
+  transition: 1.5s ease-in-out;
+  img,
+  h3 {
+    animation: fadeInUp;
+    animation-duration: 1.3s;
+  }
+}

@@ -1,0 +1,48 @@
+.enemies {
+  width: 100%;
+}
+.enemies .container__enemies {
+  position: relative;
+  display: flex;
+  margin: 0px auto;
+  width: 100vw;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.enemies .color__3 {
+  color: red;
+}
+.enemies .color__2 {
+  color: rgb(219, 164, 207);
+}
+.enemies .color__1 {
+  color: purple;
+}
+.enemies .goku__enemies {
+  height: 400px;
+  width: 300px;
+  position: relative;
+  margin-top: 10vh;
+}
+.enemies .goku__enemies h3 {
+  font-size: 2rem;
+  text-align: center;
+  color: #ffa800;
+}
+.enemies .goku__enemies img {
+  height: 100%;
+  width: 100%;
+}
+
+.goku__enemies:hover {
+  cursor: pointer;
+  transition: 1.5s ease-in-out;
+}
+.goku__enemies:hover img,
+.goku__enemies:hover h3 {
+  -webkit-animation: fadeInUp;
+          animation: fadeInUp;
+  -webkit-animation-duration: 1.3s;
+          animation-duration: 1.3s;
+}/*# sourceMappingURL=enemies.css.map */

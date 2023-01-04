@@ -1,0 +1,89 @@
+@import "../variables";
+.cards {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  padding: 10px 200px;
+  margin: 0px auto;
+  justify-content: center;
+  grid-gap: 40px;
+  .card {
+    background-color: $fundo-cores;
+    max-height: 60vh;
+    max-width: 22vw;
+    overflow: visible;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 4px rgba(0, 0, 0, 0.26);
+    box-sizing: border-box;
+
+    img {
+      position: relative;
+      margin: -5vh auto;
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.forma__goku {
+  position: relative;
+  left: 10px;
+  padding: 30px;
+  visibility: hidden;
+  bottom: 10px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  display: flex;
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+  z-index: 2;
+  h2 {
+    margin: 0;
+    font-size: 3rem;
+    position: absolute;
+    margin-top: 25vh;
+    text-shadow: 6px 1px 1px rgb(0, 0, 0);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.459);
+    border-radius: 20px;
+  }
+}
+.card:hover {
+  cursor: pointer;
+
+  transition: 1.5s ease-in-out;
+  img {
+    webkit-filter: blur(4px);
+    filter: blur(8px);
+  }
+  .forma__goku {
+    visibility: visible;
+    text-align: center;
+    transition: 2s;
+    // animation: rotateInDownLeft;
+    animation: jackInTheBox;
+    animation-duration: 1s;
+  }
+}
+@media (max-width: 1250px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px;
+    justify-content: center;
+  }
+  .card {
+    max-height: 60vh;
+    max-width: 42vw;
+  }
+}
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card {
+    position: relative;
+    left: 15%;
+    min-width: 62vw;
+  }
+}

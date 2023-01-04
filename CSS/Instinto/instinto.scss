@@ -1,0 +1,76 @@
+@import "../functions";
+@import "../variables";
+@import url("https://fonts.googleapis.com/css2?family=Tapestry&display=swap");
+
+.instinto {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  background: #111;
+  padding: 0 100px;
+  display: flex;
+  margin-top: 2vh;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  padding: 100px;
+  margin-top: 10vh;
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1;
+    pointer-events: none;
+  }
+  .instinto__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px auto;
+  }
+  .text__box {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+
+    margin: 10px;
+    h2 {
+      font-size: 4rem;
+      font-family: "Tapestry", cursive;
+    }
+  }
+  img {
+    position: relative;
+    margin: 0px auto;
+    height: 100%;
+    width: 70%;
+  }
+}
+
+@media (max-width: 1150px) {
+  .instinto {
+    padding: 20px;
+    min-height: 100vh;
+    .instinto__content {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      padding: 20px;
+    }
+    img {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .instinto {
+    img {
+      height: 100%;
+      width: 70%;
+    }
+  }
+}
