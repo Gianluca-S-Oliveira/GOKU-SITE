@@ -66,24 +66,25 @@
     animation-duration: 1s;
   }
 }
-@media (max-width: 1250px) {
+@media screen and (max-width: 1250px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
-    padding: 50px;
+    padding: 100px;
     justify-content: center;
   }
   .card {
     max-height: 60vh;
-    max-width: 42vw;
+    min-width: 32vw;
+    margin: 0px auto;
   }
 }
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .cards {
     grid-template-columns: repeat(1, 1fr);
   }
   .card {
     position: relative;
-    left: 15%;
-    min-width: 62vw;
+    margin-left: auto;
+    min-width: 52vw;
   }
 }
